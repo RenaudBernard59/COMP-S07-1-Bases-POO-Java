@@ -17,9 +17,10 @@ public class Rond {
         System.out.println("Création d'un Rond");
     };
     //Méthode
-    @Override public void Dessiner(){
+    @Override
+    public void Dessiner(){
         //super Dessiner();
         System.out.println("Dessiner Rond");
     };
 
-}
+}/*Class Rond*/;
