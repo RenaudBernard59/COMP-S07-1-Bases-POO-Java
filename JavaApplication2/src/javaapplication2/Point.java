@@ -10,6 +10,8 @@ package javaapplication2;
  * @author renob
  */
 public class Point {
+    
+    //Instanciation Variables
     private int X;
     private int Y;
     
@@ -32,6 +34,9 @@ public class Point {
     }
     
     //Méthodes  
-    public void Dessiner(){};
+    //Pas de méthode Dessiner()
+   
     
+    //Constructeur
+    public Point() {};
 }

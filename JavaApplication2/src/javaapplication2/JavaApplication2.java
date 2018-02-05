@@ -15,7 +15,19 @@ public class JavaApplication2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
-}
+        //Déclaration des variables
+        FormeGeometrique oCarre, oRectangle, oRond;
+        Couleur oColor;
+        
+        //Instanciation des variables
+        /*
+        oCarre = new Carre();
+        oRectangle = new Rectangle();
+        oRond = new Rond();
+       */
+        
+               
+       public void Dessiner(){};
+       
+    }//Main
+}//JavApplicaiton

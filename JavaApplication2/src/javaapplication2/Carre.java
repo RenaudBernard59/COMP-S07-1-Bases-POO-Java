@@ -11,4 +11,9 @@ package javaapplication2;
  */
 public class Carre {
     public void Dessiner(){};
+    
+    //Constructeur
+    public Carre(){};
+    
+    
 }

@@ -11,4 +11,9 @@ package javaapplication2;
  */
 public class Rond {
     public void Dessiner(){};
+    
+    //Constructeur
+    public Rond(){}
+
+
 }

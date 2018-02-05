@@ -11,4 +11,8 @@ package javaapplication2;
  */
 public class Rectangle {
     public void Dessiner(){};
+    
+    //Constructeur
+    public Rectangle(){};
+
 }

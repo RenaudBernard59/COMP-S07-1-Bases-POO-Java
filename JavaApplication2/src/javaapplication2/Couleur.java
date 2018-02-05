@@ -20,5 +20,8 @@ public class Couleur {
         this.Color = Color;
     }
     
-      
+    //Constructeur
+    public Couleur(){};
+    
+    
 }

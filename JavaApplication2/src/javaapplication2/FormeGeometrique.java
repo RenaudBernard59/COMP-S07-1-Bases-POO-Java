@@ -10,5 +10,12 @@ package javaapplication2;
  * @author renob
  */
 public class FormeGeometrique {
+    
+    
+    
+    
+    
+    
+    
     public void Dessiner(){};
-}
+    }
