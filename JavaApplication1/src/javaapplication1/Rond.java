@@ -10,5 +10,5 @@ package javaapplication1;
  * @author renob
  */
 public class Rond {
-    
+    public void Dessiner(){};
 }

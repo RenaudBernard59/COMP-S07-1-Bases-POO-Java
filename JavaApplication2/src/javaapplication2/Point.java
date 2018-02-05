@@ -32,6 +32,6 @@ public class Point {
     }
     
     //Méthodes  
-    public void Dessiner();
+    public void Dessiner(){};
     
 }

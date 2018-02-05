@@ -10,5 +10,15 @@ package javaapplication1;
  * @author renob
  */
 public class Couleur {
+    private int Color;
+
+    public int getColor() {
+        return Color;
+    }
+
+    public void setColor(int Color) {
+        this.Color = Color;
+    }
     
+      
 }

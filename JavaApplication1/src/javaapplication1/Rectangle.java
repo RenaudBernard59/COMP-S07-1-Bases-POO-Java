@@ -10,5 +10,5 @@ package javaapplication1;
  * @author renob
  */
 public class Rectangle {
-    
+    public void Dessiner(){};
 }
