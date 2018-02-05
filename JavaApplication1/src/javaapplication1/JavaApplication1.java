@@ -15,9 +15,9 @@ public class JavaApplication1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //Personne oPersonne = new Facteur();
+        Personne oPersonne = new Facteur();
         //Instanciation des personnes
-        Personne oPersonne = new Personne();
+        //Personne oPersonne = new Personne();
         
         //Variables de Personne
         oPersonne.setNom("BERNARD");
