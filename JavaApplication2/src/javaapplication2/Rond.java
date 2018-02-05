@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication1;
+package javaapplication2;
 
 /**
  *
  * @author renob
  */
-public class FormeGeometrique {
+public class Rond {
     public void Dessiner(){};
 }

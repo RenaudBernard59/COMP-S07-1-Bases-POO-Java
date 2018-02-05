@@ -5,6 +5,8 @@
  */
 package javaapplication1;
 
+import javaapplication1.Personne;
+
 /**
  *
  * @author renob
