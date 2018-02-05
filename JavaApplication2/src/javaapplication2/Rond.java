@@ -12,8 +12,15 @@ package javaapplication2;
 public class Rond {
     public void Dessiner(){};
     
-    //Constructeur
-    public Rond(){}
-
+     //Constructeur
+    public Rond(){
+        super();
+        System.out.println("Création d'un Rond");
+    };
+    //Méthode
+    @Override
+    public void Dessiner(){
+        super Dessiner();
+    };
 
 }

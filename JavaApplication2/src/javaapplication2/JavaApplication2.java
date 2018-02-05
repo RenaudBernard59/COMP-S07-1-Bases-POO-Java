@@ -16,18 +16,20 @@ public class JavaApplication2 {
      */
     public static void main(String[] args) {
         //Déclaration des variables
-        FormeGeometrique oCarre, oRectangle, oRond;
-        Couleur oColor;
+        Point oPoint;
+        Rectangle oRectangle;
+        Carre oCarre;
+        Rond oRond;
+        FormeGeometrique oFormeGeometrique;
         
-        //Instanciation des variables
-        /*
-        oCarre = new Carre();
+        //Instansiation des variables [des classes en objet]
         oRectangle = new Rectangle();
         oRond = new Rond();
-       */
-        
-               
-       public void Dessiner(){};
+        oPoint = new Point();    
+        oCarre = new Carre();        
+                
+       //Méthodes
+       public void Dessiner(){}/*MéthodeDessiner*/;
        
-    }//Main
-}//JavApplicaiton
+    }/*Main*/
+}/*JavApplicaiton2*/;

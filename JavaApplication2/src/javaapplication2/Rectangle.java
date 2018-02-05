@@ -10,9 +10,15 @@ package javaapplication2;
  * @author renob
  */
 public class Rectangle {
-    public void Dessiner(){};
     
-    //Constructeur
-    public Rectangle(){};
-
+     //Constructeur
+    public Rectangle(){
+        super();
+        System.out.println("Création d'un Rectangle");
+    };
+    //Méthode
+    @Override
+    public void Dessiner(){
+        super Dessiner();
+    };
 }

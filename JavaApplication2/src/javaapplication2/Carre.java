@@ -12,8 +12,14 @@ package javaapplication2;
 public class Carre {
     public void Dessiner(){};
     
-    //Constructeur
-    public Carre(){};
-    
-    
+     //Constructeur
+    public Carre(){
+        super();
+        System.out.println("Création d'un Carré");
+    };
+    //Méthode
+    @Override
+    public void Dessiner(){
+        super Dessiner();
+    };
 }

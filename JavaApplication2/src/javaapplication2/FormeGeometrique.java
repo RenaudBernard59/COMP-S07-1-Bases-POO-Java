@@ -11,11 +11,13 @@ package javaapplication2;
  */
 public class FormeGeometrique {
     
+   
+    //Constructeur
+    public FormeGeometrique(){
+        super();
+        System.out.println("Création d'une forme géométrique");
+    };
     
-    
-    
-    
-    
-    
+    //Méthodes
     public void Dessiner(){};
-    }
+};
