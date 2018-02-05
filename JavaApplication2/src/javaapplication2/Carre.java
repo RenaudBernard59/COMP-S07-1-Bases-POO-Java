@@ -10,8 +10,7 @@ package javaapplication2;
  * @author renob
  */
 public class Carre {
-    public void Dessiner(){};
-    
+   
      //Constructeur
     public Carre(){
         super();
@@ -20,6 +19,7 @@ public class Carre {
     //Méthode
     @Override
     public void Dessiner(){
-        super Dessiner();
+        //super Dessiner();
+        System.out.println("Dessiner Carré");
     };
 }

@@ -19,6 +19,7 @@ public class Rectangle {
     //Méthode
     @Override
     public void Dessiner(){
-        super Dessiner();
+        //super Dessiner();
+        System.out.println("Dessiner Rectangle");
     };
 }

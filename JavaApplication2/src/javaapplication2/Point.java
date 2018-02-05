@@ -39,7 +39,7 @@ public class Point extends Object {
     
     //Constructeur
     public Point(){
-        super();
-        System.out.println("Création d'un point");
+        //super();
+        System.out.println("Dessiner Point");
     }/*Constructeur*/;
 }

@@ -10,17 +10,16 @@ package javaapplication2;
  * @author renob
  */
 public class Rond {
-    public void Dessiner(){};
-    
+        
      //Constructeur
     public Rond(){
         super();
         System.out.println("Création d'un Rond");
     };
     //Méthode
-    @Override
-    public void Dessiner(){
-        super Dessiner();
+    @Override public void Dessiner(){
+        //super Dessiner();
+        System.out.println("Dessiner Rond");
     };
 
 }

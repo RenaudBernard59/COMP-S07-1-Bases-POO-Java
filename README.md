@@ -20,8 +20,8 @@ Comme oPersonne avec les données (Nom, Prénom, Âge, Adresse, CP, Ville) diff�
 3. Créer les classes correspondantes
 4. Instancier dans la classe Main les classes créées.
 
-
-
+## MAJ JavaApplication2
+Modifier la Méthode Dessiner pour carré, rectangle et point.
 
 
 
