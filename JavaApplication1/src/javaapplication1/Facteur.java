@@ -12,10 +12,12 @@ package javaapplication1;
 //extends = héritage
 //Facteur (fille) hérite de la classe Personne (mère)
 public class Facteur extends Personne {
-
-    public Facteur(String Nom, String Prenom, int Age, String Adresse, String Ville, String CodePostal) {
-        super(Nom, Prenom, Age, Adresse, 
-                Ville, CodePostal);
+    
+    private int AnneesAnciennetees;
+    
+    public Facteur(String Nom, String Prenom, int Age, String Adresse, String Ville, String CodePostal, int AnneesAnciennetees) {
+        super(Nom, Prenom, Age, Adresse, Ville, CodePostal, AnneesAnciennetees);
+        
     }
     //Constructeur de la classe Facteur
     /*
@@ -29,6 +31,9 @@ public class Facteur extends Personne {
     //surcharge de méthode de classe Mère : Personne
     @Override // veut dire Surcharge en JAVA
     public String getNom() {
+        return super.getNom()+" (Facteur) "; //To change body of generated methods, choose Tools | Templates.
+    }
+    public String getAnneesAnciennetees() {
         return super.getNom()+" (Facteur) "; //To change body of generated methods, choose Tools | Templates.
     }
     //Par le polymorphisme : 
