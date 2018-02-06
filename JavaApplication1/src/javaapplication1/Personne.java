@@ -4,68 +4,73 @@
  * and open the template in the editor.
  */
 package javaapplication1;
-
 /**
  *
- * @author renob
+ * @author Formation
  */
 public class Personne {
-    
     private String Nom;
     private String Prenom;
     private int Age;
-    private int CodePostal;
+    private String Adresse;
     private String Ville;
-    private int NRue;
-    private String Rue;
+    private String CodePostal;
+     
+    //Constructeur de la classe Personne
+    /*
+    public Personne() {
+        System.out.println("Création de l'objet Personne");
+        this.Age = 10;
+        
+    }
+    */
     
-    
-    // Setters
-    public void setNom(String Nom) {
+    public Personne(String Nom, String Prenom, 
+            int Age, String Adresse, String Ville, String CodePostal) {
         this.Nom = Nom;
-    }
-    
-    public void setPrenom(String Prenom) {
         this.Prenom = Prenom;
-    }
-
-    public void setAge(int Age) {
         this.Age = Age;
-    }
-
-    public void setCodePostal(int CodePostal) {
+        this.Adresse = Adresse;
+        this.Ville = Ville;
         this.CodePostal = CodePostal;
     }
 
-    public void setVille(String Ville) {
-        this.Ville = Ville;
+    
+
+    
+   
+    //un procédure = retourne rien
+    public void setPrenom(String Prenom) {
+        this.Prenom = Prenom;
+    //Affecte le prénom dans la donnée privée Prenom
     }
 
-    public void setRue(String Rue) {
-        this.Rue = Rue;
+    public void setNom(String Nom) {
+        this.Nom = Nom;
     }
 
-    public void setNRue(int NRue) {
-        this.NRue = NRue;
-    }
-    
-    
-    
-    
-    //Getters
-    public String getNom() {
-        return Nom;
-    }
-
+    //une fonctionne = retourne une variable = résultat
     public String getPrenom() {
         return Prenom;
+    }
+
+    public String getNom() {
+        return Nom;
     }
 
     public int getAge() {
         return Age;
     }
 
-    public int getCodePostal() {
+    public void setAge(int Age) {
+        this.Age = Age;
+    }
+
+    public String getAdresse() {
+        return Adresse;
+    }
+
+    public String getCodePostal() {
         return CodePostal;
     }
 
@@ -73,24 +78,16 @@ public class Personne {
         return Ville;
     }
 
-    public String getRue() {
-        return Rue;
+    public void setAdresse(String Adresse) {
+        this.Adresse = Adresse;
     }
 
-    public int getNRue() {
-        return NRue;
+    public void setCodePostal(String CodePostal) {
+        this.CodePostal = CodePostal;
     }
-    
-    
-    
- 
-    
-    
-    
-    //Constructeur de la classe Personne
-    public Personne() {
-        System.out.print("Création de l'objet personne \n\n");
-        Ville = "Lille";
-        CodePostal = 59000;
+
+    public void setVille(String Ville) {
+        this.Ville = Ville;
     }
+
 }

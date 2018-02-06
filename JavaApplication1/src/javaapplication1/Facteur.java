@@ -5,25 +5,33 @@
  */
 package javaapplication1;
 
-import javaapplication1.Personne;
-
 /**
  *
- * @author renob
+ * @author Formation
  */
-//Extends = héritage
-// Facteur Hérite de la classe Perosnne
+//extends = héritage
+//Facteur (fille) hérite de la classe Personne (mère)
 public class Facteur extends Personne {
+
+    public Facteur(String Nom, String Prenom, int Age, String Adresse, String Ville, String CodePostal) {
+        super(Nom, Prenom, Age, Adresse, 
+                Ville, CodePostal);
+    }
+    //Constructeur de la classe Facteur
+    /*
     public Facteur() {
-        super();
-        System.out.println("Création de l'objet Facteur\n");
+        super(); //Appel le constructeur de la classe mère
+        System.out.println("Création de l'objet Facteur");
+        //super(); INTERDIT !!!
     }
-
-    @Override
-    public String getNom() {
-        return "F : " + super.getNom();
-    }
+*/
     
-
+    //surcharge de méthode de classe Mère : Personne
+    @Override // veut dire Surcharge en JAVA
+    public String getNom() {
+        return super.getNom()+" (Facteur) "; //To change body of generated methods, choose Tools | Templates.
+    }
+    //Par le polymorphisme : 
+    //java reconnaît la bonne méthode selon l'objet
+    
 }
-

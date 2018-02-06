@@ -7,88 +7,98 @@ package javaapplication1;
 
 /**
  *
- * @author renob
+ * @author Formation
  */
 public class JavaApplication1 {
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // TODO code application logic here
+        // Je suis obligé de créer une objet de la classe
+        // JavaApplication1 pour utiliser la méthode
+        // afficherUnePersonne
+        //création de l'objet oPersonne de l'instance
+        //de la classe Personne 
+        //oPersonne devient un objet de type 
+        // de la classe Facteur
+        // qui a automatiquement une instance de le classe
+        // Personne
         //Personne oPersonne = new Personne();
+          //Object o1 = new Object(); 
+        //Object o1;
+        //o1 = new Object();
+        //Objet o1 et la classe object du Java
+        //la classe Object est la méta classe de Java
         
-        //déclaration des variables
-        Personne oPersonne, oPersonne2;
-        Facteur oFacteur1, oFacteur2;
-                
-        //Instanciation des variab;es
-        oPersonne = new Personne();
-        oPersonne2 = new Personne();
-        oFacteur1 = new Facteur();
-        oFacteur2 = new Facteur();
-        
-        
-        //Variables de Personne
-        oPersonne.setNom("BERNARD");
-        oPersonne.setPrenom("Renaud");
-        oPersonne.setAge(26);
-        oPersonne.setCodePostal(59270);
-        oPersonne.setVille("Bailleul");
-        oPersonne.setNRue(1158);
-        oPersonne.setRue("Route de Méteren");
-        
-        //Variables de Facteur1
-        oPersonne2.setNom("ROBERT");
-        oPersonne2.setPrenom("Régis");
-        oPersonne2.setAge(35);
-        oPersonne2.setCodePostal(01000);
-        oPersonne2.setVille("Plouc-Ville");
-        oPersonne2.setNRue(1);
-        oPersonne2.setRue("Rue du trou du cul du monde");
-        
-        //Variables de Facteur3=1
-        oFacteur1.setNom("SMITH");
-        oFacteur1.setPrenom("Johns");
-        oFacteur1.setAge(1235);
-        oFacteur1.setCodePostal(20567);
-        oFacteur1.setVille("Taridis");
-        oFacteur1.setNRue(14);
-        oFacteur1.setRue("Rue des Docteurs");
-        
-        //Variables de Facteur2
-        oFacteur2.setNom("HAMOND");
-        oFacteur2.setPrenom("John");
-        oFacteur2.setAge(65);
-        oFacteur2.setCodePostal(75004);
-        oFacteur2.setVille("Paris");
-        oFacteur2.setNRue(12);
-        oFacteur2.setRue("Rue du Musée des Dinosaues");
-        
+       //Mis en commentaire des Setter car j'ai 
+       //  utilisé un autre constructeur avec paramètres
+       /*
+        oPersonne.setNom("Germain");
+        oPersonne.setPrenom("Christophe");
+        //oPersonne.setAge(46);
+        oPersonne.setCodePostal("72000");
+        oPersonne.setVille("Le Mans");
+        oPersonne.setAdresse("Rue du Mans");
+        */      
        
-        //Imprimante
-        System.out.print(
-            "Nom : " + oPersonne.getNom() + " - Prenom : " + oPersonne.getPrenom()
-            + ".\nAge : " + oPersonne.getAge()+ " ans.\nHabite : \n\t" +
-            oPersonne.getNRue() + ", " + oPersonne.getRue() + "\n\t" +
-            oPersonne.getCodePostal() + " " + oPersonne.getVille() + ".\n\n"
-            +    
-            "Nom : " + oPersonne2.getNom() + " - Prenom : " + oPersonne2.getPrenom()
-            + ".\nAge : " + oPersonne2.getAge()+ " ans.\nHabite : \n\t" +
-            oPersonne2.getNRue() + ", " + oPersonne2.getRue() + "\n\t" +
-            oPersonne2.getCodePostal() + " " + oPersonne2.getVille() + ".\n\n"
-            +
-            "Nom : " + oFacteur1.getNom() + " - Prenom : " + oFacteur1.getPrenom()
-            + ".\nAge : " + oFacteur1.getAge()+ " ans.\nHabite : \n\t" +
-            oFacteur1.getNRue() + ", " + oFacteur1.getRue() + "\n\t" +
-            oFacteur1.getCodePostal() + " " + oFacteur1.getVille() + ".\n\n"
-                  +
-            "Nom : " + oFacteur2.getNom() + " - Prenom : " + oFacteur2.getPrenom()
-            + ".\nAge : " + oFacteur2.getAge()+ " ans.\nHabite : \n\t" +
-            oFacteur2.getNRue() + ", " + oFacteur2.getRue() + "\n\t" +
-            oFacteur2.getCodePostal() + " " + oFacteur2.getVille() + ".\n\n"   
-            ); 
+        JavaApplication1 oMain = new JavaApplication1();
+        Personne oPersonne = 
+                new Personne("GERMAIN","Christophe", 
+                        46, "Rue du Mans", "Le Mans", "72000");
+        
+        //déclarations des variables
+        Personne oPersonne2;
+        Facteur oFacteur1,oFacteur2;
+        
+        //Instanciation des variables
+        oPersonne2 = new Personne("GERMAIN","André", 
+                        46, "Rue du Mans", "Le Mans", "72000");
+        oFacteur1 = new Facteur("GERMAIN","Victor", 
+                        46, "Rue du Mans", "Le Mans", "72000");
+        //1 instance de la classe Personne et
+        //1 instance de la classe Facteur
+        oFacteur2 = new Facteur("GERMAIN","Marine", 
+                        46, "Rue du Mans", "Le Mans", "72000");
+        
 
-
+        //Remplace le bloc d'affichage par l'appel de la méthode
+        oMain.afficherUnePersonne(oPersonne);
+         System.out.println("------");
+         oMain.afficherUnePersonne(oPersonne2);
+        System.out.println("------");
+        oMain.afficherUnePersonne(oFacteur1);
+         System.out.println("------");
+         oMain.afficherUnePersonne(oFacteur2);
+         
+        
+        /*oFacteur1.setNom("Germain");
+        oFacteur1.setPrenom("André");
+        oFacteur1.setAge(20);
+        oFacteur1.setCodePostal("53000");
+        oFacteur1.setVille("Laval");
+        oFacteur1.setAdresse("Rue du Maine");*/
+         
+        
     }
-    
+    //Méthode publique de la classe JavaApplication1
+    // Elle ne peut être manipulée uniquement que par un objet
+    // de la classe JavaApplication1
+    // Elle attend en paramètre un objet d'une classe 
+    // de type Personne et
+    // de ses filles
+    public void afficherUnePersonne(Personne oP)
+    {
+        System.out.println("Nom : "+
+                oP.getNom()+ " - Prénom : "+
+                oP.getPrenom());
+        System.out.println("Age : " + 
+                oP.getAge()+" ans");
+        System.out.println("Habite : ");
+        System.out.println("\t Rue : "+
+                oP.getAdresse());
+        System.out.print("\t Code Postal : "+
+                oP.getCodePostal());
+        System.out.println(" - Ville : "+
+                oP.getVille());
+    }
 }
+
+
