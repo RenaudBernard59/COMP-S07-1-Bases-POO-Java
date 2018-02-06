@@ -26,8 +26,7 @@ public class Personne {
     }
     */
     
-    public Personne(String Nom, String Prenom, 
-            int Age, String Adresse, String Ville, String CodePostal, String Sexe) {
+    public Personne(String Nom, String Prenom, int Age, String Adresse, String Ville, String CodePostal, String Sexe) {
         this.Nom = Nom;
         this.Prenom = Prenom;
         this.Age = Age;

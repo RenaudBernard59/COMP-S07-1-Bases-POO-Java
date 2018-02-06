@@ -40,27 +40,20 @@ public class JavaApplication1 {
         */      
        
         JavaApplication1 oMain = new JavaApplication1();
-        Personne oPersonne = 
-                new Personne("GERMAIN","Christophe", 
-                        46, "Rue du Mans", "Le Mans", "72000");
         
         //déclarations des variables
-        Personne oPersonne2;
+        Personne oPersonne1, oPersonne2;
         Facteur oFacteur1,oFacteur2;
         
         //Instanciation des variables
-        oPersonne2 = new Personne("GERMAIN","André", 
-                        46, "Rue du Mans", "Le Mans", "72000");
-        oFacteur1 = new Facteur("GERMAIN","Victor", 
-                        46, "Rue du Mans", "Le Mans", "72000");
-        //1 instance de la classe Personne et
-        //1 instance de la classe Facteur
-        oFacteur2 = new Facteur("GERMAIN","Marine", 
-                        46, "Rue du Mans", "Le Mans", "72000");
+        oPersonne1 = new Personne();
+        oPersonne2 = new Personne();
+        oFacteur1 = new Facteur();
+        oFacteur2 = new Facteur();
         
 
         //Remplace le bloc d'affichage par l'appel de la méthode
-        oMain.afficherUnePersonne(oPersonne);
+        oMain.afficherUnePersonne(oPersonne1);
          System.out.println("------");
          oMain.afficherUnePersonne(oPersonne2);
         System.out.println("------");
