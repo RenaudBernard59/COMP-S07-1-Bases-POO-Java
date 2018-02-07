@@ -56,6 +56,10 @@ public class JavaApplication1 {
         Facteur oFacteur1,oFacteur2;
         Plombier oPlombier1;
   
+        
+        
+        
+        
     }
   
     public void afficherUnePersonne(Personne oP)
@@ -84,8 +88,8 @@ public class JavaApplication1 {
         }
         
         if (oP instanceof Plombier) {
-            System.out.println(" - Tarifs: " + 
-                ((Tarif)oP).getTarif());
+            System.out.println(" - Tarifs : " + 
+                ((Plombier)oP).getTarif());
         }
     }
 }

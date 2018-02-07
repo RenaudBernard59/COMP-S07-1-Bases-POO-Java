@@ -24,11 +24,11 @@ public void setTarif(double Tarif) {
     this.Tarif = Tarif;
 }
     
-public String getTarif() {
-    return super.getTarif() + " est son tarif.\n";
+public double getTarif() {
+    return Tarif;
 }
 
 public void afficherTarifs() {
-    System.out.printf("Le prix est %2.2f € \n")((Plombier)oPi.getTarif();
+    
 } 
 }/*END Class Plombier!*/
