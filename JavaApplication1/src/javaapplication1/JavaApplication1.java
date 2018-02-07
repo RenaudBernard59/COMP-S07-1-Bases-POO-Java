@@ -19,37 +19,9 @@ package javaapplication1;
 
 public class JavaApplication1 {
     public static void main(String[] args) {
-        // TODO code application logic here
-        // Je suis obligé de créer une objet de la classe
-        // JavaApplication1 pour utiliser la méthode
-        // afficherUnePersonne
-        //création de l'objet oPersonne de l'instance
-        //de la classe Personne 
-        //oPersonne devient un objet de type 
-        // de la classe Facteur
-        // qui a automatiquement une instance de le classe
-        // Personne
-        //Personne oPersonne = new Personne();
-          //Object o1 = new Object(); 
-        //Object o1;
-        //o1 = new Object();
-        //Objet o1 et la classe object du Java
-        //la classe Object est la méta classe de Java
-        
-       //Mis en commentaire des Setter car j'ai 
-       //  utilisé un autre constructeur avec paramètres
-       /*
-        oPersonne.setNom("Germain");
-        oPersonne.setPrenom("Christophe");
-        //oPersonne.setAge(46);
-        oPersonne.setCodePostal("72000");
-        oPersonne.setVille("Le Mans");
-        oPersonne.setAdresse("Rue du Mans");
-        */      
-       
         JavaApplication1 oMain = new JavaApplication1();
-        
         Personne[] oPtab = new Personne[10];
+        Facteur[] oFtab = new Facteur[10];
 
         int indice = 0;
         System.out.println("---Début tableau juste personne---");
@@ -59,7 +31,25 @@ public class JavaApplication1 {
             oPtab[indice] = oPi;
             indice++;
         }   
-
+         
+        System.out.println("---Fin tableau Personne---");
+        System.out.println("---Début tableau Facteur---");
+        for (Facteur oPi : oFtab) {
+            int i = indice + 1;
+            TypeSexe sexe;
+            if ((i%2)==0) { sexe = TypeSexe.HOMME;}
+            else {sexe = TypeSexe.FEMME;}
+            
+            oPi = new Facteur(
+                    "Victor"+"F"+i,
+                    "Machin"+"F"+i,
+                    45, "Rue du Mans","Le Mans","53000",
+                    sexe, 10+i);
+            oFtab[indice] = oPi;
+            indice++;
+        }
+        
+        
         //déclarations des variables
         Personne oPersonne1, oPersonne2;
         Facteur oFacteur1,oFacteur2;
@@ -69,7 +59,6 @@ public class JavaApplication1 {
         oPersonne2 = new Personne();
         oFacteur1 = new Facteur();
         oFacteur2 = new Facteur();
-        
 
         //Remplace le bloc d'affichage par l'appel de la méthode
         oMain.afficherUnePersonne(oPersonne1);
@@ -111,14 +100,14 @@ public class JavaApplication1 {
         System.out.println(" - Ville : "+
                 oP.getVille());
         if(oP.getSexe() == TypeSexe.FEMME) {
-            Ststem.out.println(" - Sexe : F");
+            System.out.println(" - Sexe : F");
         } else {
-            Ststem.out.println(" - Sexe : M");
+            System.out.println(" - Sexe : M");
         }
         
         if (oP instanceof Facteur) {
             System.out.println(" - Annienneté : " + 
-                ((facteur)oP).getAnneesAnciennetees());
+                ((Facteur)oP).getAnneesAnciennetees());
         }
     }
 }
