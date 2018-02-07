@@ -25,7 +25,7 @@ public class Facteur extends Personne {
     public Facteur() {
         super(); //Appel le constructeur de la classe mère
         System.out.println("Création de l'objet Facteur");
-        //super(); INTERDIT !!!
+        //super(); INTERDIT !!!ystem.out.println("Création de l'objet Facteur");
     }
 */
     
@@ -40,4 +40,4 @@ public class Facteur extends Personne {
     //Par le polymorphisme : 
     //java reconnaît la bonne méthode selon l'objet
     
-}
+}/*END Class Facteur!*/

@@ -9,6 +9,26 @@ package javaapplication1;
  *
  * @author renob
  */
-public class Plombier {
+public class Plombier extends Personne {
+    private double Tarif;
     
-}
+    public Plombier(String Nom, String Prenom, int Age, String Adresse, String Ville, String CodePostal, TypeSexe Sexe, double Tarif) {
+       super(Nom, Prenom, Age, Adresse, Ville, CodePostal, Sexe);
+       System.out.println("Création de l'objet Plombier");
+    }
+    
+    public void offreService(double Tarif) {}
+    
+    
+     public void setTarif(double Tarif) {
+        this.Tarif = Tarif;
+    }
+    
+    @Override
+    public String getTarif() {
+        return super.getTarif() + " est son tarif.\n";
+    }
+    
+    
+    
+}/*END Class Plombier!*/
