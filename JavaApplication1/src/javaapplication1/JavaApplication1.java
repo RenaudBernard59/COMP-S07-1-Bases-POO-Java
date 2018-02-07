@@ -33,6 +33,7 @@ public class JavaApplication1 {
         }   
          
         System.out.println("---Fin tableau Personne---");
+        indice = 0;
         System.out.println("---Début tableau Facteur---");
         for (Facteur oPi : oFtab) {
             int i = indice + 1;
@@ -48,7 +49,7 @@ public class JavaApplication1 {
             oFtab[indice] = oPi;
             indice++;
         }
-        
+        for(Facteur oPi : oFtab) oMain.afficherUnePersonne(oPi);
         
         //déclarations des variables
         Personne oPersonne1, oPersonne2;
