@@ -54,38 +54,10 @@ public class JavaApplication1 {
         //déclarations des variables
         Personne oPersonne1, oPersonne2;
         Facteur oFacteur1,oFacteur2;
-        
-        //Instanciation des variables
-        /*oPersonne1 = new Personne();
-        oPersonne2 = new Personne();
-        oFacteur1 = new Facteur();
-        oFacteur2 = new Facteur();
-
-        //Remplace le bloc d'affichage par l'appel de la méthode
-        oMain.afficherUnePersonne(oPersonne1);
-         System.out.println("------");
-         oMain.afficherUnePersonne(oPersonne2);
-        System.out.println("------");
-        oMain.afficherUnePersonne(oFacteur1);
-         System.out.println("------");
-         oMain.afficherUnePersonne(oFacteur2);
-         
-        
-        oFacteur1.setNom("Germain");
-        oFacteur1.setPrenom("André");
-        oFacteur1.setAge(20);
-        oFacteur1.setCodePostal("53000");
-        oFacteur1.setVille("Laval");
-        oFacteur1.setAdresse("Rue du Maine");
-        oFacteur1.setSexe(HOMME);
-        oFacteur1.setAnneesAnciennetees(30);*/
+        Plombier oPlombier1;
+  
     }
-    //Méthode publique de la classe JavaApplication1
-    // Elle ne peut être manipulée uniquement que par un objet
-    // de la classe JavaApplication1
-    // Elle attend en paramètre un objet d'une classe 
-    // de type Personne et
-    // de ses filles
+  
     public void afficherUnePersonne(Personne oP)
     {
         System.out.println("Nom : "+
@@ -109,6 +81,11 @@ public class JavaApplication1 {
         if (oP instanceof Facteur) {
             System.out.println(" - Annienneté : " + 
                 ((Facteur)oP).getAnneesAnciennetees());
+        }
+        
+        if (oP instanceof Plombier) {
+            System.out.println(" - Tarifs: " + 
+                ((Tarif)oP).getTarif());
         }
     }
 }

@@ -10,25 +10,25 @@ package javaapplication1;
  * @author renob
  */
 public class Plombier extends Personne {
-    private double Tarif;
+private double Tarif;
+
+public Plombier(String Nom, String Prenom, int Age, String Adresse, String Ville, String CodePostal, TypeSexe Sexe, double Tarif) {
+   super(Nom, Prenom, Age, Adresse, Ville, CodePostal, Sexe);
+   this.Tarif = Tarif;
+   System.out.println("Création de l'objet Plombier");
+}
     
-    public Plombier(String Nom, String Prenom, int Age, String Adresse, String Ville, String CodePostal, TypeSexe Sexe, double Tarif) {
-       super(Nom, Prenom, Age, Adresse, Ville, CodePostal, Sexe);
-       System.out.println("Création de l'objet Plombier");
-    }
+public void offreService() {}
     
-    public void offreService(double Tarif) {}
+public void setTarif(double Tarif) {
+    this.Tarif = Tarif;
+}
     
-    
-     public void setTarif(double Tarif) {
-        this.Tarif = Tarif;
-    }
-    
-    @Override
-    public String getTarif() {
-        return super.getTarif() + " est son tarif.\n";
-    }
-    
-    
-    
+public String getTarif() {
+    return super.getTarif() + " est son tarif.\n";
+}
+
+public void afficherTarifs() {
+    System.out.printf("Le prix est %2.2f € \n")((Plombier)oPi.getTarif();
+} 
 }/*END Class Plombier!*/
