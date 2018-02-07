@@ -9,6 +9,14 @@ package javaapplication1;
  *
  * @author Formation
  */
+
+//Création tableaux
+
+
+
+
+
+
 public class JavaApplication1 {
     public static void main(String[] args) {
         // TODO code application logic here
@@ -41,12 +49,23 @@ public class JavaApplication1 {
        
         JavaApplication1 oMain = new JavaApplication1();
         
+        Personne[] oPtab = new Personne[10];
+
+        int indice = 0;
+        System.out.println("---Début tableau juste personne---");
+        for (Personne oPi : oPtab) {
+            int i = indice + 1;
+            oPi = new Personne("Germain"+i,"André"+i,(35+i),"Rue du Maine","53000","Laval",TypeSexe.HOMME);
+            oPtab[indice] = oPi;
+            indice++;
+        }   
+
         //déclarations des variables
         Personne oPersonne1, oPersonne2;
         Facteur oFacteur1,oFacteur2;
         
         //Instanciation des variables
-        oPersonne1 = new Personne();
+        /*oPersonne1 = new Personne();
         oPersonne2 = new Personne();
         oFacteur1 = new Facteur();
         oFacteur2 = new Facteur();
@@ -62,14 +81,14 @@ public class JavaApplication1 {
          oMain.afficherUnePersonne(oFacteur2);
          
         
-        /*oFacteur1.setNom("Germain");
+        oFacteur1.setNom("Germain");
         oFacteur1.setPrenom("André");
         oFacteur1.setAge(20);
         oFacteur1.setCodePostal("53000");
         oFacteur1.setVille("Laval");
-        oFacteur1.setAdresse("Rue du Maine");*/
-         
-        
+        oFacteur1.setAdresse("Rue du Maine");
+        oFacteur1.setSexe(HOMME);
+        oFacteur1.setAnneesAnciennetees(30);*/
     }
     //Méthode publique de la classe JavaApplication1
     // Elle ne peut être manipulée uniquement que par un objet
@@ -91,6 +110,16 @@ public class JavaApplication1 {
                 oP.getCodePostal());
         System.out.println(" - Ville : "+
                 oP.getVille());
+        if(oP.getSexe() == TypeSexe.FEMME) {
+            Ststem.out.println(" - Sexe : F");
+        } else {
+            Ststem.out.println(" - Sexe : M");
+        }
+        
+        if (oP instanceof Facteur) {
+            System.out.println(" - Annienneté : " + 
+                ((facteur)oP).getAnneesAnciennetees());
+        }
     }
 }
 

@@ -8,6 +8,11 @@ package javaapplication1;
  *
  * @author Formation
  */
+
+
+enum TypeSexe {
+    FEMME, HOMME;
+}
 public class Personne {
     private String Nom;
     private String Prenom;
@@ -15,18 +20,10 @@ public class Personne {
     private String Adresse;
     private String Ville;
     private String CodePostal;
-    private String Sexe;
+    private TypeSexe Sexe;
      
     //Constructeur de la classe Personne
-    /*
-    public Personne() {
-        System.out.println("Création de l'objet Personne");
-        this.Age = 10;
-        
-    }
-    */
-    
-    public Personne(String Nom, String Prenom, int Age, String Adresse, String Ville, String CodePostal, String Sexe) {
+    public Personne(String Nom, String Prenom, int Age, String Adresse, String Ville, String CodePostal, TypeSexe Sexe) {
         this.Nom = Nom;
         this.Prenom = Prenom;
         this.Age = Age;
@@ -36,9 +33,6 @@ public class Personne {
         this.Sexe = Sexe;
     }
 
-    
-
-    
     /*=====================================================================
     //Setters
     ==============*/
@@ -60,7 +54,7 @@ public class Personne {
     public void setVille(String Ville) {
         this.Ville = Ville;
     }
-    public void setSexe(String Sexe) {
+    public void setSexe(TypeSexe Sexe) {
         this.Sexe = Sexe;
     }
     
@@ -90,7 +84,7 @@ public class Personne {
     public String getVille() {
         return Ville;
     }
-    public String getSexe() {
+    public TypeSexe getSexe() {
         return Sexe;
     }
     

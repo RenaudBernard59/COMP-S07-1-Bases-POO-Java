@@ -15,8 +15,9 @@ public class Facteur extends Personne {
     
     private int AnneesAnciennetees;
     
-    public Facteur(String Nom, String Prenom, int Age, String Adresse, String Ville, String CodePostal, String Sexe, int AnneesAnciennetees) {
-        super(Nom, Prenom, Age, Adresse, Ville, CodePostal, Sexe, AnneesAnciennetees);
+    public Facteur(String Nom, String Prenom, int Age, String Adresse, String Ville, String CodePostal, TypeSexe Sexe, int AnneesAnciennetees) {
+       super(Nom, Prenom, Age, Adresse, Ville, CodePostal, Sexe);
+        this.AnneesAnciennetees = AnneesAnciennetees;
         
     }
     //Constructeur de la classe Facteur
