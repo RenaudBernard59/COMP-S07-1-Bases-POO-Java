@@ -7,7 +7,7 @@ package javaapplication2;
 
 /**
  *
- * @author renob
+ * @author Formation
  */
 public class JavaApplication2 {
 
@@ -15,21 +15,9 @@ public class JavaApplication2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //Déclaration des variables
-        Point oPoint;
-        Rectangle oRectangle;
-        Carre oCarre;
-        Rond oRond;
-        FormeGeometrique oFormeGeometrique;
-        
-        //Instansiation des variables [des classes en objet]
-        oRectangle = new Rectangle();
-        oRond = new Rond();
-        oPoint = new Point();    
-        oCarre = new Carre();        
-                
-       //Méthodes
-       public void Dessiner(){}/*MéthodeDessiner*/;
-       
-    }/*Main*/
-}/*JavApplicaiton2*/;
+        // TODO code application logic here
+        Point oPt = new Point(12,13);
+        System.out.println("Point : "+oPt);       
+    }
+    
+}

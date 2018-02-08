@@ -3,18 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication2;
+package javaapplication3;
 
 /**
  *
  * @author Formation
  */
-public class FormeGeometrique extends Point {
+public class ObjetGraphique implements iDessiner {
 
-   
-     public FormeGeometrique(int x,int y ) {
-        super(x, y);
-    } 
-    
+    @Override
+    public void Dessiner() {
+        System.out.println("Je dessine :"+this.getClass().getName());
+    }
     
 }

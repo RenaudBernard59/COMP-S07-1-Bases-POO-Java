@@ -7,19 +7,22 @@ package javaapplication2;
 
 /**
  *
- * @author renob
+ * @author Formation
  */
-public class Rectangle {
-    
-     //Constructeur
-    public Rectangle(){
-        super();
-        System.out.println("Création d'un Rectangle");
-    };
-    //Méthode
+public class Rectangle extends FormeGeometrique {
+
+    public Rectangle(int x, int y) {
+        super(x, y);
+    }
+
     @Override
-    public void Dessiner(){
-        //super Dessiner();
-        System.out.println("Dessiner Rectangle");
-    };
+    public void Dessiner() {
+        System.out.println("*****");
+        System.out.println("*   *");
+        System.out.println("*   *");
+        System.out.println("*****");
+    }
+
+
+    
 }

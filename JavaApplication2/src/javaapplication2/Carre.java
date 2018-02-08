@@ -1,4 +1,4 @@
- /*
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -7,19 +7,21 @@ package javaapplication2;
 
 /**
  *
- * @author renob
+ * @author Formation
  */
-public class Carre {
-   
-     //Constructeur
-    public Carre(){
-        super();
-        System.out.println("Création d'un Carré");
-    };
-    //Méthode
+public class Carre extends Rectangle{
+    
+    public Carre(int x, int y) {
+        super(x, y);
+    }
+
     @Override
-    public void Dessiner(){
-        //super Dessiner();
-        System.out.println("Dessiner Carré");
-    };
+    public void Dessiner() {
+        System.out.println("****");
+        System.out.println("*  *");
+        System.out.println("*  *");
+        System.out.println("****");
+    }
+    
+    
 }

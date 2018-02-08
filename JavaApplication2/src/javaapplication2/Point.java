@@ -7,39 +7,25 @@ package javaapplication2;
 
 /**
  *
- * @author renob
+ * @author Formation
  */
-public class Point extends Object {
+public class Point {
+    private int x;
+    private int y;
+
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
     
-    //Instanciation Variables
-    private int X;
-    private int Y;
-    
-    //Setter
-    public void setX(int X) {
-        this.X = X;
+    public void Dessiner() {
+        
     }
 
-    public void setY(int Y) {
-        this.Y = Y;
+    @Override
+    public String toString() {
+        return "X : "+x+" - y : "+y;
     }
     
-    //Getter
-    public int getX() {
-        return X;
-    }
-
-    public int getY() {
-        return Y;
-    }
     
-    //Méthodes  
-    public void Dessiner(){}/*MéthodeDessiner*/;
-   
-    
-    //Constructeur
-    public Point(){
-        //super();
-        System.out.println("Dessiner Point");
-    }/*Constructeur*/;
 }

@@ -7,20 +7,20 @@ package javaapplication2;
 
 /**
  *
- * @author renob
+ * @author Formation
  */
-public class Rond {
-        
-     //Constructeur
-    public Rond(){
-        super();
-        System.out.println("Création d'un Rond");
-    };
-    //Méthode
-    @Override
-    public void Dessiner(){
-        //super Dessiner();
-        System.out.println("Dessiner Rond");
-    };
+public class Rond extends FormeGeometrique{
+    
+    public Rond(int x, int y) {
+        super(x, y);
+    }
 
-}/*Class Rond*/;
+    @Override
+    public void Dessiner() {
+        System.out.println(" ** ");
+        System.out.println("*  *");
+        System.out.println("*  *");
+        System.out.println(" ** ");
+    }
+    
+}
